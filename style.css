@@ -1,0 +1,102 @@
+/*A CSS (cascading style sheet) file is meant for designing your website
+While optional, your website is going to look pretty bland without one :)*/
+
+.im-fell-dw-pica-regular {
+    font-family: "IM Fell DW Pica", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*The star, "*", means apply this attribute to EVERYTHING in your HTML, though 
+it is overridden in more specific items*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "IM Fell DW Pica", serif;
+}
+
+
+/*You can also define certain attributes for all types (like h1, h2) like so*/
+body{
+    margin: 0; /* Reset the default margin for the body */
+    overflow-x: hidden;
+}
+
+/*CSS for DIV1*/
+.div1{
+    width: 100%; /*take up 100% width of whatever parent element it is in*/
+    min-height: 100vh; /*take up 100vh (viewport height) relative to your screen*/
+    background-color: rgb(235, 237, 241); /*self-explainatory*/
+    color: rgb(47, 46, 46); /*font color*/
+    text-align: left; /*aligns TEXT in the center*/ 
+    padding: 10%; /*gives whitespace within the div*/
+    font: IMFellDWPica;
+ }
+
+ .div2{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(183, 211, 141);
+    color: black;
+    text-align: center;
+    padding: 10%;
+    font: IMFellDWPica;
+ }
+
+.name a{ 
+    color:#2a2929;
+    font-size: large;
+    position: relative;
+    left: 50px;
+    text-align: left;
+    text-decoration: none;
+    font: IMFellDWPica;
+}
+
+.name a:hover{
+    color:rgb(77, 73, 73);
+    font: IMFellDWPica;
+}
+
+
+/*Using # if you want to define something by its id instead of class
+The navbar is slightly more complicated*/
+#navbar{
+  padding-top: 2%;
+  padding-bottom: 2%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    top: 0;
+    position: fixed;
+    text-align: left;
+    z-index: 1000;
+    width: 100%;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, padding-bottom 0.3s ease; /* Add other properties as needed */
+    border-bottom: 1px solid #333;
+}
+
+#navbar.scrolled {
+    background-color: black;
+    padding-bottom: 10px;
+}
+  
+#navbar.unscrolled {
+    background-color: rgba(0, 0, 0, 0);
+    padding-bottom: 0; /* Adjust as needed */
+}
+
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 15px
+}
+
+nav ul li a{
+    text-decoration: solid;
+    color:antiquewhite;
+    font-weight: 400;
+
+}
