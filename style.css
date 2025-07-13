@@ -1,71 +1,47 @@
-/*font family*/
-.im-fell-dw-pica-regular {
-    font-family: "IM Fell DW Pica", serif;
-    font-weight: 400;
-    font-style: normal;
-}
-/*The star, "*", means apply this attribute to EVERYTHING in your HTML, though 
-it is overridden in more specific items*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "IM Fell DW Pica", serif;
+    scroll-behavior: smooth;
 }
 
-/*You can also define certain attributes for all types (like h1, h2) like so*/
 body{
-    margin: 0; /* Reset the default margin for the body */
+    margin: 0; 
     overflow-x: hidden;
 }
 
-/*CSS for DIV1*/
-.div1{
-    width: 100%; /*take up 100% width of whatever parent element it is in*/
-    min-height: 100vh; /*take up 100vh (viewport height) relative to your screen*/
-    background-color: rgb(235, 237, 241); /*self-explainatory*/
-    color: rgb(47, 46, 46); /*font color*/
-    text-align: left; /*aligns TEXT in the center*/ 
-    padding: 10%; /*gives whitespace within the div*/
-    font: IMFellDWPica;
- }
-
 .name a{ 
-    color:#2a2929;
-    font-size: large;
-    position: relative;
-    left: 45px;
-    text-align: left;
+    padding: 10px 15px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 14px;
     text-decoration: none;
-    font: IMFellDWPica;
+    color: #2a2929;
 }
 
 .name a:hover{
     color:rgb(77, 73, 73);
-    font: IMFellDWPica;
 }
 
-.links a{ 
-    color:#2a2929;
-    font-size: large;
+.nav-links a{ 
+    left: 750px;
     position: relative;
-    left: 1000px;
     text-align: right;
+    margin-right: 5px;
+    padding: 10px 15px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 14px;
     text-decoration: none;
-    font: IMFellDWPica;
-    margin-right: 25px;
+    color: #2a2929;
 }
 
-.links a:hover{
+.nav-links a:hover{
     color:rgb(77, 73, 73);
-    font: IMFellDWPica;
 }
 
-/*Using # if you want to define something by its id instead of class
-The navbar is slightly more complicated*/
-#navbar{
-  padding-top: 1.5%;
-  padding-bottom: 1.5%;
+.navbar{
+    padding-bottom: 8px;
     margin: 0;
     display: flex;
     align-items: center;
@@ -75,29 +51,74 @@ The navbar is slightly more complicated*/
     z-index: 1000;
     width: 100%;
     box-sizing: border-box;
-    transition: background-color 0.3s ease, padding-bottom 0.3s ease; /* Add other properties as needed */
     border-bottom: 1px solid #333;
+    background-color: #f4f4f4;
 }
 
-#navbar.scrolled {
-    background-color: black;
-    padding-bottom: 10px;
+.main-box {
+    width: 750px;
+    border: 1px solid black;
+    box-shadow: 4px 4px 0px black;
+    margin: 80px auto;
+    background-color: #f4f4f4;
+    font-family: monospace;
 }
   
-#navbar.unscrolled {
-    background-color: rgba(0, 0, 0, 0);
-    padding-bottom: 10px; /* Adjust as needed */
+.main-header {
+    background-color: #f4f4f4;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 15px;
+    border-bottom: 1px solid black;
+}
+  
+.main-image {
+    width: 100%;
+    height: 10%;
+}
+  
+.main-description {
+    padding: 15px;
+    font-size: 13px;
+    line-height: 1.5;
 }
 
-nav ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 10px 15px
+.main-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
 }
 
-nav ul li a{
-    text-decoration: solid;
-    color:antiquewhite;
-    font-weight: 400;
+.main-box.small {
+    width: 355px; 
+    margin: 0; 
+    margin-bottom: 50px;
+}
+  
+.footer {
+    text-align: center;
+    font-family: monospace;
+    font-size: 12px;
+    background-color: #e0e0e0;
+    padding: 20px;
+    margin-top: 60px;
+    color: #2a2929;
+}
 
+.social-icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+
+.social-link{
+    display: flex;
+    align-items: center;
+    text-decoration: none;         
+    color: #2a2929;               
+    font-family: monospace;
+    font-size: 12epx;
+    margin: 10px;
 }

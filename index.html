@@ -1,39 +1,76 @@
 <!DOCTYPE html>
 <html>
 
-<!--head usually stores information about the website, but not really stuff in the website-->
 <head>
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
-
-    <!--In the tab section of your web browser, this name is displayed-->
     <title>Sydney's Website</title>
-
-    <!--Links your CSS to the file, check out style.css!-->
     <link rel="stylesheet" href="style.css">
 </head>
 
-
-<!--actual contents displayed on the website-->
 <body>
-    <!--NAVIGATION BAR-->
-    <nav id="navbar">
+
+    <nav class="navbar">
         <h2 class="name"><a href ="index.html">Sydney Berritt</a></h2>
-        <h2 class="links"><a href ="https://github.com/sydneyberritt">github</a></h2>
-        <h2 class="links"><a href ="https://www.linkedin.com/in/sydneyberritt/">linkedin</a></h2>
+        <h2 class="nav-links"><a href ="#about">about</a></h2>
+        <h2 class="nav-links"><a href ="#projects">projects</a></h2>
+        <h2 class="nav-links"><a href ="#experience">experience</a></h2>
+        <h2 class="nav-links"><a href ="#contact">contact</a></h2>
     </nav>
 
-    <!--div 1-->
-    <div class="div1">
-            <h1>Hi, I'm Sydney! </h1>
-            <p> I am a Computer Science Student at George Washington University.</p>
+    <div class="main-box" id = "about-me">
+        <div class="main-header">About Me</div>
+        <img src="me-picture.jpg" alt="picture of me" class="main-image">
+        <div class="main-description">
+          Put Description Here
+        </div>
+      </div>
+
+      <div class="main-box" id = "projects">
+        <div class="main-header">Projects</div>
+        <div class="main-description">
+          Projects Here
+        </div>
+      </div>
+      
+      <div class="main-box" id = "experience">
+        <div class="main-header">Work Experience</div>
+        <div class="main-description">
+          <h3>Allegis Group</h3>
+          <p>Software Development Intern</p>
+          <p>June 2025 - Present</p>
+        </div>
+      </div>
+
+      <div class = "main-row">
+
+      <div class="main-box small">
+        <div class="main-header">Find me</div>
+        <div class="main-description">
+            <a href="https://github.com/sydneyberritt" class = "social-link">
+            <img src="github.png" alt="GitHub logo" class = "social-icon"> GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/sydneyberritt/" class = "social-link">
+            <img src="linkedin.png" alt="LinkedIn logo" class = "social-icon"> LinkedIn
+            </a>
+            <a href="mailto:sydneyberritt@gmail.com" class = "social-link">
+            <img src="mail.png" alt="Email logo" class="social-icon"> sydneyberritt@gmail.com
+            </a>
+        </div>
+      </div>
+
+      <div class="main-box small">
+        <div class="main-header">Resume</div>
+        <div class="main-description">
+            Resume
+        </div>
+      </div>
+
     </div>
 
-    <div class="div2">
-        <h1>Projects</h1>
-        <button>This is a button (a boring button)</button>
-        <p><a href="https://www.youtube.com/">Link to YouTube</a></p>
-    </div>
-
-<!--Always close your tags!-->
+    <div class="footer">
+        <p>"Success isn't about the end result, it's about what you learn along the way." - Vera Wang</p>
+        <p>Made with ♡ in D.C.</p>
+      </div>
+      
 </body>
 </html>
